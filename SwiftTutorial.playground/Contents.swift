@@ -20,3 +20,21 @@ print(num1 % num2)
 sqrt(2.0)
 Double.pi / 2
 max(sqrt(2.0), Double.pi / 2)
+
+class Movie {
+    var title: String = ""
+    var genre: String?
+    
+    init(title: String) {
+        self.title = title
+    }
+    
+    func getMovieTitle() -> String {
+        return title
+    }
+}
+
+
+var movie = Movie(title:"Nice Movie You Can Watch")
+print("The title of the movie is \(movie.getMovieTitle())")
+
