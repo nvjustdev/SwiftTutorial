@@ -72,7 +72,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func stopRecordConversation(_ sender: Any) {
-        tapButtonLabel.text = "Tap To Record"
+        tapButtonLabel.text = "Tap above button to record"
         
         //Recording has ended. Call flipButtons with false
         flipButtons(recordState: false)

@@ -10,6 +10,9 @@
 		EB5394D1203BF0E900EC8AF2 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5394D0203BF0E900EC8AF2 /* PlaySoundsViewController.swift */; };
 		EB5394D2203BF0E900EC8AF2 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5394D0203BF0E900EC8AF2 /* PlaySoundsViewController.swift */; };
 		EB5394D3203BF0E900EC8AF2 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5394D0203BF0E900EC8AF2 /* PlaySoundsViewController.swift */; };
+		EB5394D5203BF88F00EC8AF2 /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5394D4203BF88E00EC8AF2 /* playsoundsviewcontroller-audio.swift */; };
+		EB5394D6203BF88F00EC8AF2 /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5394D4203BF88E00EC8AF2 /* playsoundsviewcontroller-audio.swift */; };
+		EB5394D7203BF88F00EC8AF2 /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5394D4203BF88E00EC8AF2 /* playsoundsviewcontroller-audio.swift */; };
 		EB955EAE203B9ECA008808AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955EAD203B9ECA008808AB /* AppDelegate.swift */; };
 		EB955EB0203B9ECA008808AB /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955EAF203B9ECA008808AB /* RecordSoundsViewController.swift */; };
 		EB955EB3203B9ECA008808AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB955EB1203B9ECA008808AB /* Main.storyboard */; };
@@ -39,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		EB5394D0203BF0E900EC8AF2 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		EB5394D4203BF88E00EC8AF2 /* playsoundsviewcontroller-audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller-audio.swift"; sourceTree = "<group>"; };
 		EB955EAA203B9ECA008808AB /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB955EAD203B9ECA008808AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB955EAF203B9ECA008808AB /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				EB955EAD203B9ECA008808AB /* AppDelegate.swift */,
 				EB955EAF203B9ECA008808AB /* RecordSoundsViewController.swift */,
 				EB5394D0203BF0E900EC8AF2 /* PlaySoundsViewController.swift */,
+				EB5394D4203BF88E00EC8AF2 /* playsoundsviewcontroller-audio.swift */,
 				EB955EB1203B9ECA008808AB /* Main.storyboard */,
 				EB955EB7203B9ECA008808AB /* Assets.xcassets */,
 				EB955EB9203B9ECA008808AB /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB955EB0203B9ECA008808AB /* RecordSoundsViewController.swift in Sources */,
+				EB5394D5203BF88F00EC8AF2 /* playsoundsviewcontroller-audio.swift in Sources */,
 				EB955EB6203B9ECA008808AB /* PitchPerfect.xcdatamodeld in Sources */,
 				EB5394D1203BF0E900EC8AF2 /* PlaySoundsViewController.swift in Sources */,
 				EB955EAE203B9ECA008808AB /* AppDelegate.swift in Sources */,
@@ -285,6 +291,7 @@
 			files = (
 				EB5394D2203BF0E900EC8AF2 /* PlaySoundsViewController.swift in Sources */,
 				EB955EC6203B9ECA008808AB /* PitchPerfectTests.swift in Sources */,
+				EB5394D6203BF88F00EC8AF2 /* playsoundsviewcontroller-audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +301,7 @@
 			files = (
 				EB5394D3203BF0E900EC8AF2 /* PlaySoundsViewController.swift in Sources */,
 				EB955ED1203B9ECA008808AB /* PitchPerfectUITests.swift in Sources */,
+				EB5394D7203BF88F00EC8AF2 /* playsoundsviewcontroller-audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
