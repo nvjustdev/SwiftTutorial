@@ -25,6 +25,10 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //Setup the record and stop buttons properly
+        setupButtons(button: recordButton)
+        setupButtons(button: stopRecordButton)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -32,9 +36,10 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         //When the view is loaded, record button is enabled and stop button is disabled
         flipButtons(recordState: false)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //A method to setup the buttons properly on the UI for all devices
+    func setupButtons(button: UIButton){
+        button.imageView?.contentMode = .scaleAspectFit
     }
 
     //A method to disable and enable the right buttons

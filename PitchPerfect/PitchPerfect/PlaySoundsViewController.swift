@@ -38,17 +38,25 @@ class PlaySoundsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         setupAudio()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        setupButtons(button: slowButton)
+        setupButtons(button: fastButton)
+        setupButtons(button: lowButton)
+        setupButtons(button: highButton)
+        setupButtons(button: echoButton)
+        setupButtons(button: reverbButton)
+        setupButtons(button: stopButton)
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureUI(.notPlaying)
+    }
+    
+    //A method to setup the buttons properly on the UI for all devices
+    func setupButtons(button: UIButton){
+        button.imageView?.contentMode = .scaleAspectFit
     }
     
     @IBAction func playSoundForButton(_ sender: UIButton) {
