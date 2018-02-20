@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundsViewController.swift
 //  PitchPerfect
 //
 //  Created by Nirmala Jayaraman on 2/19/18.
@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
-    @IBOutlet weak var tapButtonLabel: UILabel!
-    @IBOutlet weak var recordButton: UIButton!
-    @IBOutlet weak var stopRecordButton: UIButton!
+    //MARK: Properties
     
+    //UI Properties
+    @IBOutlet weak var tapButtonLabel: UILabel! //"Tap here" label
+    @IBOutlet weak var recordButton: UIButton! //Record button
+    @IBOutlet weak var stopRecordButton: UIButton!//Stop and play button which takes us to the playback view
     
+
+    var audioRecorder: AVAudioRecorder! //AV recorder
+    
+    //MARK: Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -37,11 +44,30 @@ class ViewController: UIViewController {
         recordButton.isEnabled = !recordState
     }
     
+    fileprivate func recordingStart() {
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String //Gets the directory path for the filesystem
+        let recordingName = "recordedAudio.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = URL(string: pathArray.joined(separator: "/"))
+        
+        let session = AVAudioSession.sharedInstance()
+        try! session .setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
+        
+        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        
+        audioRecorder.isMeteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
+    }
+    
     @IBAction func recordConversation(_ sender: Any) {
         tapButtonLabel.text = "Recording is in progress"
         
         //Recording is in progress. Call flipButtons with true
         flipButtons(recordState: true)
+        
+        //Actual recording start
+        recordingStart()
     }
     
     @IBAction func stopRecordConversation(_ sender: Any) {
@@ -50,6 +76,8 @@ class ViewController: UIViewController {
         //Recording has ended. Call flipButtons with false
         flipButtons(recordState: false)
     }
+    
+    
     
 }
 

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB955EAE203B9ECA008808AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955EAD203B9ECA008808AB /* AppDelegate.swift */; };
-		EB955EB0203B9ECA008808AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955EAF203B9ECA008808AB /* ViewController.swift */; };
+		EB955EB0203B9ECA008808AB /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB955EAF203B9ECA008808AB /* RecordSoundsViewController.swift */; };
 		EB955EB3203B9ECA008808AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB955EB1203B9ECA008808AB /* Main.storyboard */; };
 		EB955EB6203B9ECA008808AB /* PitchPerfect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB955EB4203B9ECA008808AB /* PitchPerfect.xcdatamodeld */; };
 		EB955EB8203B9ECA008808AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB955EB7203B9ECA008808AB /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		EB955EAA203B9ECA008808AB /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB955EAD203B9ECA008808AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB955EAF203B9ECA008808AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB955EAF203B9ECA008808AB /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		EB955EB2203B9ECA008808AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB955EB5203B9ECA008808AB /* PitchPerfect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PitchPerfect.xcdatamodel; sourceTree = "<group>"; };
 		EB955EB7203B9ECA008808AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				EB955EAD203B9ECA008808AB /* AppDelegate.swift */,
-				EB955EAF203B9ECA008808AB /* ViewController.swift */,
+				EB955EAF203B9ECA008808AB /* RecordSoundsViewController.swift */,
 				EB955EB1203B9ECA008808AB /* Main.storyboard */,
 				EB955EB7203B9ECA008808AB /* Assets.xcassets */,
 				EB955EB9203B9ECA008808AB /* LaunchScreen.storyboard */,
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB955EB0203B9ECA008808AB /* ViewController.swift in Sources */,
+				EB955EB0203B9ECA008808AB /* RecordSoundsViewController.swift in Sources */,
 				EB955EB6203B9ECA008808AB /* PitchPerfect.xcdatamodeld in Sources */,
 				EB955EAE203B9ECA008808AB /* AppDelegate.swift in Sources */,
 			);
