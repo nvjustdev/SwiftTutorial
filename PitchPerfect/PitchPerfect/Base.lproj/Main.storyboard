@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Tap To Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1O-eP-Pxk">
-                                <rect key="frame" x="113" y="430" width="149" height="20.5"/>
+                                <rect key="frame" x="88" y="430" width="204" height="21"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,10 +50,10 @@
                         <constraints>
                             <constraint firstItem="QgS-VD-nrP" firstAttribute="top" secondItem="L1O-eP-Pxk" secondAttribute="bottom" constant="35" id="2dg-jG-yqC"/>
                             <constraint firstItem="LX6-lv-b5b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="7qF-Zr-nQ9"/>
-                            <constraint firstItem="L1O-eP-Pxk" firstAttribute="centerX" secondItem="LX6-lv-b5b" secondAttribute="centerX" constant="-2" id="Bpe-8L-g3R"/>
+                            <constraint firstItem="L1O-eP-Pxk" firstAttribute="centerX" secondItem="LX6-lv-b5b" secondAttribute="centerX" constant="0.5" id="Bpe-8L-g3R"/>
                             <constraint firstItem="LX6-lv-b5b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="L7V-P6-L5H"/>
-                            <constraint firstItem="QgS-VD-nrP" firstAttribute="centerX" secondItem="L1O-eP-Pxk" secondAttribute="centerX" constant="0.5" id="e1s-4L-5oJ"/>
-                            <constraint firstItem="L1O-eP-Pxk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="rVm-0I-2Pz"/>
+                            <constraint firstItem="QgS-VD-nrP" firstAttribute="centerX" secondItem="L1O-eP-Pxk" secondAttribute="centerX" constant="-2" id="e1s-4L-5oJ"/>
+                            <constraint firstItem="L1O-eP-Pxk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="rVm-0I-2Pz"/>
                             <constraint firstItem="L1O-eP-Pxk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="366" id="srb-1H-hgd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,12 +68,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="117"/>
+            <point key="canvasLocation" x="948" y="116.49175412293854"/>
         </scene>
         <!--Playback-->
         <scene sceneID="lQg-Dc-NMu">
             <objects>
-                <viewController title="Playback" id="rsy-ML-Duq" sceneMemberID="viewController">
+                <viewController title="Playback" id="rsy-ML-Duq" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ku-HT-697">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
